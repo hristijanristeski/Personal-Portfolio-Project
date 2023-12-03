@@ -5,7 +5,7 @@ import certificate2 from "../assets/certificate2.jpg";
 
 import {
   VerticalTimeline,
-  VerticalTimelineElement, 
+  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -13,18 +13,41 @@ import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
 import StarIcon from "@material-ui/icons/Star";
 
-
-function Experience() {
+const Experience = () => {
   return (
     <div>
       <div className="title">
-       <WorkIcon />Work <StarIcon />Certification  <SchoolIcon />Education</div>
-      <VerticalTimeline  lineColor="#e9d35b">
-       
-      <VerticalTimelineElement
+        <WorkIcon />
+        Work <StarIcon />
+        Certification <SchoolIcon />
+        Education
+      </div>
+      <VerticalTimeline lineColor="#e9d35b">
+        <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2022 - present"
-          dateClassName='date'
+          date="2023 - present"
+          dateClassName="date"
+          iconStyle={{ background: "#e9d35b", color: "fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Frontend Developer at AppGreat
+          </h3>
+          <p>
+            Worked on 3 different projects so far: <br /> - HR System app for
+            managing working hours, vacations and sick leaves for employees
+            <br /> - Casino / online gaming platform
+            <br /> - Gold/crypto trading app for making different transactions
+            with gold. <br />
+            Working mostly on the frontend part of the projects but also backend
+            when needed.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2022 - 2023"
+          dateClassName="date"
           iconStyle={{ background: "#e9d35b", color: "fff" }}
           icon={<WorkIcon />}
         >
@@ -32,17 +55,19 @@ function Experience() {
             Junior React Developer at "Pabau"
           </h3>
           <p>
-           - Working on a big project building medical software for clinics so they can go 100% paper free <br/>
-           - Implementing new features using React framework, TypeScript and Next.js environment <br/>
-           - Integrating GraphQL APIs <br/>
-           - Extending and reusing components from ant.design and writing modern reusable components from scratch
+            - Working on a big project building medical software for clinics so
+            they can go 100% paper free <br />
+            - Implementing new features using React framework, TypeScript and
+            Next.js environment <br />
+            - Integrating GraphQL APIs <br />- Extending and reusing components
+            from ant.design and writing modern reusable components from scratch
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2018 - 2022"
-          dateClassName='date'
+          dateClassName="date"
           iconStyle={{ background: "#e9d35b", color: "fff" }}
           icon={<WorkIcon />}
         >
@@ -51,16 +76,16 @@ function Experience() {
           </h3>
           <p>
             - Organizing the entire production process from the initial raw
-            material to the final product <br/>
-            - Leading a team of individuals (around 20) who
-            provide quality products through technological processes
+            material to the final product <br />- Leading a team of individuals
+            (around 20) who provide quality products through technological
+            processes
           </p>
         </VerticalTimelineElement>
-        
+
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="Apr 2022 - Jul 2022"
-          dateClassName='date'
+          dateClassName="date"
           iconStyle={{ background: "#21325e", color: "fff" }}
           icon={<StarIcon />}
         >
@@ -93,7 +118,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="Jan 2022 - Apr 2022"
-          dateClassName='date'
+          dateClassName="date"
           iconStyle={{ background: "#21325e", color: "fff" }}
           icon={<StarIcon />}
         >
@@ -125,7 +150,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="Jun 2021 - Dec 2021"
-          dateClassName='date'
+          dateClassName="date"
           iconStyle={{ background: "#21325e", color: "fff" }}
           icon={<StarIcon />}
         >
@@ -137,7 +162,7 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2013 - 2017"
-          dateClassName='date'
+          dateClassName="date"
           iconStyle={{ background: "#e9d35b", color: "fff" }}
           icon={<SchoolIcon />}
         >
@@ -149,8 +174,8 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date={"2008 - 2012"}  
-          dateClassName='date'    
+          date={"2008 - 2012"}
+          dateClassName="date"
           iconStyle={{ background: "#e9d35b", color: "fff" }}
           icon={<SchoolIcon />}
         >
@@ -162,6 +187,6 @@ function Experience() {
       </VerticalTimeline>
     </div>
   );
-}
+};
 
 export default Experience;

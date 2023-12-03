@@ -6,7 +6,6 @@ import Experience from "./pages/Experience";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectDisplay from "./pages/ProjectDisplay";
-import ReactSwitch from "react-switch";
 import { createContext, useState } from "react";
 export const ThemeContext = createContext(null);
 
@@ -21,11 +20,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className="App" id={theme}>
         <Router>
-          <Navbar />
-          <div className="switch">
-            <label>{theme === "light" ? "Light Mode" : "Dark Mode"}</label>
-            <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
-          </div>
+          <Navbar theme={theme} toggleTheme={toggleTheme} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />

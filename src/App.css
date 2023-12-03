@@ -19,23 +19,22 @@ body {
   margin: 0;
 }
 
-
 .switch {
   display: flex;
-  width: -100vw;
-  height: 50px;
-  justify-content: right;
+  width: 20%;
+  justify-content: flex-end;
   align-items: center;
-  padding-right: 5%;
   position: sticky;
   top: 0;
   z-index: 1;
+  background: #21325e;
+  right: 20px;
 }
 #light .switch {
-  background-color: #21325e;
+  background: #21325e;
 }
 #dark .switch {
-  background-color: rgb(2, 5, 24);
+  background: #21325e;
 }
 
 .switch label {
@@ -49,4 +48,3 @@ body {
 #dark .switch label {
   color: white;
 }
-

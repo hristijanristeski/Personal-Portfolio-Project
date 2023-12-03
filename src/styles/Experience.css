@@ -1,19 +1,21 @@
 #dark .date {
-    color: white;
+  color: white;
 }
 @media only screen and (max-width: 1170px) {
   #dark .date {
-     color: black
-    }
-  }
-#dark .title {   
-    color: white;
-    text-align: center;
-}
-
-
-.title {   
     color: black;
-    text-align: center;
+  }
+}
+#dark .title {
+  color: white;
+  text-align: center;
 }
 
+.title {
+  display: flex;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
