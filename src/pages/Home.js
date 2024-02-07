@@ -4,10 +4,36 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 import ProfilePic from "../assets/profile.jpg";
+import HtmlLogo from "../assets/html-logo.webp";
+import CssLogo from "../assets/css-logo.webp";
+import GitLogo from "../assets/git-logo1.png";
+import AntDesignLogo from "../assets/ant-design-logo1.png";
+import JsLogo from "../assets/js-logo1.jpg";
+import MUILogo from "../assets/material-ui-logo.png";
+import NextJsLogo from "../assets/next-js-logo1.png";
+import ReactLogo from "../assets/logo-react-icon.png";
+import ReactRouterLogo from "../assets/react-router-logo1.png";
+import ReduxLogo from "../assets/redux-logo.png";
+import TypescriptLogo from "../assets/typescript-logo1.png";
+import GraphQlLogo from "../assets/graphql-logo.png";
 
 import "../styles/Home.css";
 
 const Home = () => {
+  const logos = [
+    HtmlLogo,
+    CssLogo,
+    JsLogo,
+    ReactLogo,
+    TypescriptLogo,
+    NextJsLogo,
+    ReactRouterLogo,
+    ReduxLogo,
+    GitLogo,
+    AntDesignLogo,
+    MUILogo,
+    GraphQlLogo,
+  ];
   return (
     <div className="home">
       <div className="about">
@@ -54,11 +80,6 @@ const Home = () => {
             I am eager to learn new things every day!
             <br />
             <br />
-            <p className="skills">
-              Skills:
-              <br /> HTML, CSS, JavaScript, React, TypeScript, Next.js, React
-              Router, Redux, GraphQL, AntDesign, Material UI, Git
-            </p>
             <br />
           </p>
         </div>
@@ -72,6 +93,21 @@ const Home = () => {
             alt="profile"
           />
         </div>
+      </div>
+      <div className="aboutMe">Skills</div>
+      <div className="skillsContainer" style={{ bottom: "auto" }}>
+        {logos.map((logo, index) => (
+          <img
+            key={index}
+            style={{
+              borderRadius: "50%",
+              width: "5%",
+              marginRight: "10px",
+            }}
+            src={logo}
+            alt={`logo-${index}`}
+          />
+        ))}
       </div>
     </div>
   );

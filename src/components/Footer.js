@@ -5,6 +5,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "../styles/Footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="footer">
       <div className="socialMedia">
@@ -30,7 +31,7 @@ const Footer = () => {
           <LinkedInIcon />
         </a>
       </div>
-      <p>&copy; 2022 hristijanristeski.com</p>
+      <p>&copy; {currentYear} hristijanristeski.com</p>
     </div>
   );
 };

@@ -112,3 +112,10 @@ h1 {
 .skills {
   text-align: center;
 }
+
+.skillsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
