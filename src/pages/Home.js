@@ -19,7 +19,7 @@ import GraphQlLogo from "../assets/graphql-logo.png";
 
 import "../styles/Home.css";
 
-const Home = () => {
+const Home = ({ theme }) => {
   const logos = [
     HtmlLogo,
     CssLogo,
@@ -66,9 +66,8 @@ const Home = () => {
       <div className="aboutMe">
         <div className="text">
           <p>
-            Hard- working individual, passionate about creating responsive,
+            Hard-working individual, passionate about creating responsive,
             beautiful and user-friendly interfaces.
-            <br />
             <br />
             I love creating pages where I'm able to create enjoyable
             interactions and experiences for everyone!
@@ -76,11 +75,7 @@ const Home = () => {
             I like combining the worlds of logic and creative design, making
             eye-catching and accesible websites and applications.
             <br />
-            <br />
-            I am eager to learn new things every day!
-            <br />
-            <br />
-            <br />
+            <br />I am eager to learn new things every day!
           </p>
         </div>
         <div className="image">
@@ -94,20 +89,35 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="aboutMe">Skills</div>
-      <div className="skillsContainer" style={{ bottom: "auto" }}>
-        {logos.map((logo, index) => (
-          <img
-            key={index}
-            style={{
-              borderRadius: "50%",
-              width: "5%",
-              marginRight: "10px",
-            }}
-            src={logo}
-            alt={`logo-${index}`}
-          />
-        ))}
+      <div className="skills">
+        <div className="aboutMe">Skills</div>
+        <div className="skillsContainer" style={{ bottom: "auto" }}>
+          {logos.map((logo, index) => (
+            <img
+              key={index}
+              className="logo"
+              style={{
+                borderRadius: "50%",
+                width: "5%",
+                marginRight: "10px",
+                transition: "width 0.3s ease",
+              }}
+              src={logo}
+              alt={`logo-${index}`}
+              onMouseOver={(e) => {
+                e.target.style.width = "7%";
+                e.target.style.boxShadow =
+                  theme === "dark"
+                    ? "hsl(180deg 51.4% 51.6% / 0%) 0px 54px 55px, rgb(68 195 195 / 71%) 0px -12px 30px, rgb(68 195 195 / 76%) 0px 4px 6px, rgb(68 195 195 / 37%) 0px 12px 13px, rgb(68 195 195 / 0%) 0px -3px 5px"
+                    : "";
+              }}
+              onMouseOut={(e) => {
+                e.target.style.width = "5%";
+                e.target.style.boxShadow = "none";
+              }}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

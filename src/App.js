@@ -22,7 +22,7 @@ function App() {
         <Router>
           <Navbar theme={theme} toggleTheme={toggleTheme} />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home theme={theme} />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/project/:id" element={<ProjectDisplay />} />
             <Route path="/experience" element={<Experience />} />

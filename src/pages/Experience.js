@@ -31,19 +31,20 @@ const Experience = () => {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Frontend Developer at AppGreat
+            Software Engineer at "AppGreat"
           </h3>
           <p>
-            Worked on 3 different projects so far: <br /> - HR System app for
-            managing working hours, vacations and sick leaves for employees
-            <br /> - Casino / online gaming platform
-            <br /> - Gold/crypto trading app for making different transactions
-            with gold. <br />
+            Worked on 3 different projects so far:
+            <li>Online Gold Trading Platform/App</li>
+            <li>Casino/online gaming platform</li>
+            <li>
+              HR System app for managing working hours, vacations and sick
+              leaves for employees
+            </li>
             Working mostly on the frontend part of the projects but also backend
-            when needed.
+            when needed
           </p>
         </VerticalTimelineElement>
-
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2022 - 2023"
@@ -55,15 +56,21 @@ const Experience = () => {
             Junior React Developer at "Pabau"
           </h3>
           <p>
-            - Working on a big project building medical software for clinics so
-            they can go 100% paper free <br />
-            - Implementing new features using React framework, TypeScript and
-            Next.js environment <br />
-            - Integrating GraphQL APIs <br />- Extending and reusing components
-            from ant.design and writing modern reusable components from scratch
+            <li>
+              Working on a big project building medical software for clinics so
+              they can go 100% paper free
+            </li>
+            <li>
+              Implementing new features using React framework, TypeScript and
+              Next.js environment
+            </li>
+            <li>Integrating GraphQL APIs</li>
+            <li>
+              Extending and reusing components from ant.design and writing
+              modern reusable components from scratch
+            </li>
           </p>
         </VerticalTimelineElement>
-
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2018 - 2022"
@@ -75,13 +82,16 @@ const Experience = () => {
             Head of Filling Plant Operations (Production) at "Prilep Brewery"
           </h3>
           <p>
-            - Organizing the entire production process from the initial raw
-            material to the final product <br />- Leading a team of individuals
-            (around 20) who provide quality products through technological
-            processes
+            <li>
+              Organizing the entire production process from the initial raw
+              material to the final product
+            </li>
+            <li>
+              Leading a team of individuals (around 20) who provide quality
+              products through technological processes
+            </li>
           </p>
         </VerticalTimelineElement>
-
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="Apr 2022 - Jul 2022"
@@ -111,6 +121,7 @@ const Experience = () => {
           <a
             href="https://www.udemy.com/certificate/UC-3b91aa3a-71d0-4bc9-8364-8a6da02c2af5/"
             target="_blank"
+            rel="noreferrer"
           >
             See credentials
           </a>
@@ -143,6 +154,7 @@ const Experience = () => {
           <a
             href="https://www.udemy.com/certificate/UC-fc84b40f-2c69-4def-bc83-c77df9ca24c9/"
             target="_blank"
+            rel="noreferrer"
           >
             See credentials
           </a>

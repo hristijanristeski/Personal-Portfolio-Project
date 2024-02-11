@@ -10,18 +10,15 @@
   }
 }
 #light {
-  background-color: #f0f0f0;
+  background-color: #f0f0f000;
 }
-
 #dark {
   background-color: #0b020b;
 }
-
 body {
   padding: 0;
   margin: 0;
 }
-
 .switch {
   display: flex;
   width: 100%;
@@ -33,21 +30,21 @@ body {
   background: #21325e;
   margin-right: 10px;
 }
+.react-switch-bg {
+  background-color: #e9d35b !important;
+}
 #light .switch {
   background: #94a5d1;
 }
 #dark .switch {
   background: #21325e;
 }
-
 .switch label {
   margin: 10px;
 }
-
 #light .switch label {
   color: white;
 }
-
 #dark .switch label {
   color: white;
 }
